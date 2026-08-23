@@ -215,7 +215,7 @@ function ReportPage() {
                 />
                 <Bar dataKey="match" radius={[8, 8, 0, 0]}>
                   {chartData.map((_, i) => (
-                    <Cell key={i} fill={`var(--color-chart-${(i % 5) + 1})`} />
+                    <Cell key={i} fill={`var(--chart-${(i % 5) + 1})`} />
                   ))}
                 </Bar>
               </BarChart>

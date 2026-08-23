@@ -249,7 +249,7 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
             <PieChart>
               <Pie data={leadChart} dataKey="value" nameKey="name" innerRadius={55} outerRadius={90} paddingAngle={3}>
                 {leadChart.map((_, i) => (
-                  <Cell key={i} fill={`var(--color-chart-${(i % 5) + 1})`} />
+                  <Cell key={i} fill={`var(--chart-${(i % 5) + 1})`} />
                 ))}
               </Pie>
               <Legend wrapperStyle={{ fontSize: 11 }} />
@@ -277,7 +277,7 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
                   borderRadius: 12,
                 }}
               />
-              <Bar dataKey="value" radius={[8, 8, 0, 0]} fill="var(--color-chart-1)" />
+              <Bar dataKey="value" radius={[8, 8, 0, 0]} fill="var(--chart-1)" />
             </BarChart>
           </ResponsiveContainer>
         </div>
