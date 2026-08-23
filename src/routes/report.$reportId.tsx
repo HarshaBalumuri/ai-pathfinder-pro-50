@@ -202,15 +202,15 @@ function ReportPage() {
           <div className="glass mb-5 rounded-3xl p-5">
             <ResponsiveContainer width="100%" height={260}>
               <BarChart data={chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
-                <XAxis dataKey="name" tick={{ fontSize: 11 }} stroke="var(--color-muted-foreground)" />
-                <YAxis domain={[0, 100]} tick={{ fontSize: 11 }} stroke="var(--color-muted-foreground)" />
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
+                <XAxis dataKey="name" tick={{ fontSize: 11 }} stroke="var(--muted-foreground)" />
+                <YAxis domain={[0, 100]} tick={{ fontSize: 11 }} stroke="var(--muted-foreground)" />
                 <Tooltip
                   contentStyle={{
-                    background: "var(--color-popover)",
-                    border: "1px solid var(--color-border)",
+                    background: "var(--popover)",
+                    border: "1px solid var(--border)",
                     borderRadius: 12,
-                    color: "var(--color-popover-foreground)",
+                    color: "var(--popover-foreground)",
                   }}
                 />
                 <Bar dataKey="match" radius={[8, 8, 0, 0]}>
@@ -271,12 +271,12 @@ function ReportPage() {
               {radarData.length > 2 && (
                 <ResponsiveContainer width="100%" height={240}>
                   <RadarChart data={radarData} outerRadius="72%">
-                    <PolarGrid stroke="var(--color-border)" />
+                    <PolarGrid stroke="var(--border)" />
                     <PolarAngleAxis dataKey="skill" tick={{ fontSize: 10 }} />
                     <Radar
                       dataKey="value"
-                      stroke="var(--color-primary)"
-                      fill="var(--color-primary)"
+                      stroke="var(--primary)"
+                      fill="var(--primary)"
                       fillOpacity={0.35}
                     />
                   </RadarChart>

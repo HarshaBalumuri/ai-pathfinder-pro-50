@@ -255,8 +255,8 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
               <Legend wrapperStyle={{ fontSize: 11 }} />
               <Tooltip
                 contentStyle={{
-                  background: "var(--color-popover)",
-                  border: "1px solid var(--color-border)",
+                  background: "var(--popover)",
+                  border: "1px solid var(--border)",
                   borderRadius: 12,
                 }}
               />
@@ -267,13 +267,13 @@ function Dashboard({ onSignOut }: { onSignOut: () => void }) {
           <h2 className="font-semibold">Assessments over time</h2>
           <ResponsiveContainer width="100%" height={260}>
             <BarChart data={dailyChart} margin={{ left: -20 }}>
-              <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" vertical={false} />
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
               <XAxis dataKey="name" tick={{ fontSize: 11 }} />
               <YAxis allowDecimals={false} tick={{ fontSize: 11 }} />
               <Tooltip
                 contentStyle={{
-                  background: "var(--color-popover)",
-                  border: "1px solid var(--color-border)",
+                  background: "var(--popover)",
+                  border: "1px solid var(--border)",
                   borderRadius: 12,
                 }}
               />
